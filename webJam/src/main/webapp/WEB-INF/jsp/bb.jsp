@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 bb.jsp
+git 테스트중
+
 
 sql
 test 테이블 생성
