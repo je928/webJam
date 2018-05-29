@@ -7,9 +7,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 <title>webJam</title>
 
+<link rel="icon" href="../../favicon.ico">
+
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="css/dashboard.css" type="text/css" />
 
 <!-- <script src="js/test.js"></script> -->
 <!-- <link rel="stylesheet" href="css/test.css" type="text/css" /> -->
@@ -18,14 +21,16 @@
 </head>
 <body>
 	
-	/WEB-INF/jsp/decorators/default.jsp
-	<br>
-	여긴 header.jsp include 할거임.!!
-	<hr>
+	<jsp:include page="/WEB-INF/jsp/decorators/header.jsp" />
 	
-	<div class='mainBody'>
-		<sitemesh:write property='body' />
-	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<jsp:include page="/WEB-INF/jsp/decorators/left.jsp" />
+			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+				<sitemesh:write property='body' />
+			</div>
+		</div>
+	</div>	
 
 </body>
 </html>
