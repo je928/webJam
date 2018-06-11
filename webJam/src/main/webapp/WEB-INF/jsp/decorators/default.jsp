@@ -30,7 +30,7 @@
 			</div>
 			<jsp:include page="/WEB-INF/jsp/decorators/left.jsp" />
 		</div>
-	</div>	
+	</div>
 
 </body>
 </html>

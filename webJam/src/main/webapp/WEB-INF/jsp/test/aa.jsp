@@ -14,3 +14,4 @@ CREATE TABLE test (
 
 insert into test values ('1', 'aa', '에이에이');
 insert into test values ('2', 'bb', '비비');
+insert into test values ('3', 'cc', '씨씨');
