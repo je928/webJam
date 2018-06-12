@@ -13,20 +13,29 @@ public class TestController {
 	@Autowired
 	TestService ts;
 	
-	@RequestMapping("/aa")
-    public String aa(Model model) throws Exception{
+	@RequestMapping("/")
+    public String testMain(Model model) throws Exception{
+        return "testMain";
+    }
+	
+	@RequestMapping("/testBoard")
+    public String testBoard(Model model) throws Exception{
+        return "test/testBoard";
+    }
+	
+	@RequestMapping("/testCalendar")
+    public String testCalendar(Model model) throws Exception{
+        return "test/testCalendar";
+    }
+	
+	@RequestMapping("/testDB")
+    public String testDB(Model model) throws Exception{
 		
 		String no = "1";
 		String id = ts.getInfo(no);
 		model.addAttribute("id", id);
 		
-        return "test/aa";
-    }
-	
-	@RequestMapping("/bb")
-    public String bb(Model model) throws Exception{
-		
-        return "bb";
+        return "test/testDB";
     }
 	
 }

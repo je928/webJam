@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/taglib/taglibs.jsp" %>
 
 	<h1 class="page-header">Dashboard</h1>
 	
@@ -31,7 +32,7 @@
 			<thead>
 				<tr>
 					<th>#</th>
-					<th>Header</th>
+					<th><html:pagenation totalCount="1" maxRows="10" currentPage="1" /></th>
 					<th>Header</th>
 					<th>Header</th>
 					<th>Header</th>

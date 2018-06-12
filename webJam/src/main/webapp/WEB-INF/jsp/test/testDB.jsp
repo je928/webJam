@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/taglib/taglibs.jsp" %>
 
 	<div>*** DB 조회 TEST ***</div>
 	<div>id : ${id}</div>
