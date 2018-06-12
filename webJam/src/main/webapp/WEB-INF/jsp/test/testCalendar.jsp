@@ -5,6 +5,7 @@
 <link href='calender/css/fullcalendar.print.css' rel='stylesheet' media='print' />
 <script src='calender/js/jquery-ui.custom.min.js'></script>
 <script src='calender/js/fullcalendar.js'></script>
+
 <script>
 
 	$(document).ready(function() {
@@ -57,7 +58,6 @@
 			firstDay: 1, //  1(Monday) this can be changed to 0(Sunday) for the USA system
 			selectable: true,
 			defaultView: 'month',
-			
 			axisFormat: 'h:mm',
 			columnFormat: {
                 month: 'ddd',    // Mon
@@ -174,10 +174,10 @@
 		}
 		
 	#wrap {
-		width: 1100px;
-		margin: 0 auto;
-		}
-		
+	  min-height: .01%;
+	  overflow-x: auto;
+	}
+	
 	#external-events {
 		float: left;
 		width: 150px;
@@ -223,9 +223,7 @@
 </style>
 
 
-<div id='wrap'>
-
-<div id='calendar'></div>
-
-<div style='clear:both'></div>
+<div id="wrap">
+	<div id='calendar'></div>
+	<div style='clear:both'></div>
 </div>

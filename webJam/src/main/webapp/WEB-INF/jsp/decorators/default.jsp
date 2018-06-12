@@ -14,9 +14,6 @@
 <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 <link rel="stylesheet" href="css/dashboard.css" type="text/css" />
 
-<!-- <script src="js/test.js"></script> -->
-<!-- <link rel="stylesheet" href="css/test.css" type="text/css" /> -->
-
 <sitemesh:write property='head' />
 </head>
 <body>
